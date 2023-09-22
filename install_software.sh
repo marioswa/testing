@@ -5,11 +5,12 @@
 # This is a simple script to install yugabyte-db software on a machine.
 #
 ###############################################################################
-YB_RELEASE=$1
+YB_RELEASE="2.19.2.0"
 YB_VERSION=${YB_RELEASE%-*}
 YB_HOME=/home/${USER}/yugabyte-db
 YB_DL_BASE="https://downloads.yugabyte.com/releases"
-YB_PACKAGE_URL="${YB_DL_BASE}/${YB_VERSION}/yugabyte-${YB_RELEASE}-el8-aarch64.tar.gz"
+#YB_PACKAGE_URL="${YB_DL_BASE}/${YB_VERSION}yugabyte-${YB_RELEASE}-el8-aarch64.tar.gz"
+YB_PACKAGE_URL="https://downloads.yugabyte.com/releases/2.19.2.0/yugabyte-2.19.2.0-b121-el8-aarch64.tar.gz"
 YB_PACKAGE_NAME="${YB_PACKAGE_URL##*/}"
 
 ###############################################################################
